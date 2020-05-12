@@ -36,8 +36,8 @@ public class Task2 {
     static void org(int[][] a) {
 
 
-        for (int i = 0; i < a.length; i++) {                           //бежим по строкам...
-            for (int j = a.length - 1; j > i; j--) {                   // бежит на встречу... до встречи
+        for (int i = 0; i < a.length; i++) {
+            for (int j = a.length - 1; j > i; j--) {
                 int m = a[i].length;
                 if (sumLine(a[j]) > sumLine(a[j - 1])) {
                     for (int k = 0; k < m; k++) {
